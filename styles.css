@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap');
+:root{--gold:#f5bd23;--gold2:#ffe27a;--black:#080808;--panel:#141414;--muted:#b9b9b9;--white:#fff}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--black);color:var(--white);font-family:'DM Sans',Arial,sans-serif;line-height:1.65}
+a{color:inherit}
+.site-header{display:flex;align-items:center;justify-content:space-between;gap:22px;padding:14px clamp(18px,5vw,72px);border-bottom:1px solid #292929;background:#090909;position:sticky;top:0;z-index:10}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none;font-weight:700;letter-spacing:2px;color:var(--gold);font-size:19px}
+.brand img{width:45px;height:45px;object-fit:contain}
+.brand small{display:block;font-size:9px;letter-spacing:2px;color:#eee}
+nav{display:flex;gap:25px}
+nav a{text-decoration:none;color:#ddd;font-size:14px}
+nav a:hover{color:var(--gold)}
+.header-call{background:var(--gold);color:#111;text-decoration:none;font-weight:700;padding:10px 15px;border-radius:4px;white-space:nowrap;font-size:13px}
+.hero{min-height:590px;display:grid;grid-template-columns:1.2fr .8fr;align-items:center;gap:30px;padding:70px clamp(20px,8vw,120px);background:radial-gradient(ellipse at 80% 50%,#332507 0%,#15110a 27%,#080808 68%)}
+.hero-content{max-width:650px}
+.eyebrow{color:var(--gold);font-weight:700;font-size:12px;letter-spacing:3px;margin:0 0 13px}
+h1,h2,h3{line-height:1.15}
+h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(42px,6vw,76px);margin:0 0 22px;letter-spacing:-1.5px}
+h1 span{color:var(--gold)}
+.hero-copy{font-size:17px;color:#d0d0d0;max-width:530px}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin:28px 0}
+.button{display:inline-block;text-decoration:none;padding:13px 22px;border-radius:4px;font-weight:700}
+.button-gold{background:var(--gold);color:#111}
+.button-outline{border:1px solid var(--gold);color:var(--gold)}
+.address-line{font-size:13px;color:#aaa;margin-top:24px}
+.hero-mark{display:flex;align-items:center;justify-content:center}
+.hero-mark img{width:min(100%,390px);height:auto;filter:drop-shadow(0 15px 50px #8a5c0638)}
+.section{padding:76px 20px;text-align:center;max-width:1100px;margin:auto}
+h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(30px,4vw,45px);margin:0 0 20px}
+.intro>p:last-child{color:#c8c8c8;max-width:720px;margin:0 auto;font-size:16px}
+.rooms{max-width:1000px}
+.room-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:20px;margin-top:35px;text-align:left}
+.room-card{border:1px solid #34302a;border-radius:8px;background:linear-gradient(145deg,#191919,#0f0f0f);padding:28px}
+.room-card.featured{border-color:#8e6b16}
+.room-icon{font-size:28px;color:var(--gold)}
+.room-card h3{font-family:'Playfair Display',Georgia,serif;font-size:25px;margin:12px 0}
+.price{font-size:23px;font-weight:700;color:var(--gold);margin:12px 0}
+.price span{font-size:12px;font-weight:400;color:#aaa;display:block}
+.room-card p:not(.price){color:#c2c2c2}
+.room-card a{display:inline-block;color:var(--gold);font-weight:700;text-decoration:none;margin-top:8px}
+.fine-print{font-size:12px;color:#999;margin-top:22px}
+.contact-section{display:grid;grid-template-columns:1fr 1fr;gap:50px;align-items:center;padding:70px clamp(20px,8vw,120px);background:#17130a;border-top:1px solid #3a2b0b}
+.contact-section h2{max-width:480px}
+.contact-section>div>p:not(.eyebrow){color:#c9c4b8;max-width:500px}
+.contact-details{display:grid;gap:12px}
+.contact-item{display:block;text-decoration:none;background:#0d0d0d;border:1px solid #383124;padding:14px 17px;border-radius:5px}
+.contact-item span{display:block;color:#aaa;font-size:12px}
+.contact-item strong{display:block;color:#ffe18a;overflow-wrap:anywhere}
+footer{text-align:center;padding:32px 18px;color:#999;font-size:12px}
+.footer-brand{color:var(--gold);font-weight:700;letter-spacing:2px;text-decoration:none}
+.footer-note{color:#666}
+@media(max-width:760px){.site-header{flex-wrap:wrap;gap:12px}.brand{font-size:16px}.brand img{width:38px;height:38px}nav{order:3;width:100%;justify-content:center;gap:22px}.header-call{margin-left:auto}.hero{grid-template-columns:1fr;text-align:center;padding-top:55px}.hero-content{margin:auto}.hero-actions{justify-content:center}.hero-mark img{width:min(70%,280px)}.room-grid,.contact-section{grid-template-columns:1fr}.contact-section{gap:25px}.section{padding-top:58px;padding-bottom:58px}}
+@media(max-width:380px){.header-call{font-size:11px;padding:9px}.brand{letter-spacing:1px}nav{gap:16px}}
