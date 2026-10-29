@@ -19,3 +19,10 @@ IMPORTANT BEFORE PUBLISHING
 5. This is a static website. It does not process or confirm bookings automatically; guests call, email or WhatsApp.
 
 To preview locally, open public/index.html in a browser.
+
+
+GALLERY UPDATE:
+- hotel-room-rates.png and hotel-facilities.png are the hotel images supplied by the owner.
+- hotel-tour.mp4 is the supplied hotel video.
+- index.html and styles.css now display these in a Gallery section.
+Upload all files/folders in this ZIP to the existing GitHub repository, replacing the matching index.html and styles.css and adding the three media files. Keep robas-logo.png.
